@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  award_id: 1
+  order: 1
+  number: MyString
+  text: MyString
+  otherRequirement_id: 1
+
+two:
+  award_id: 1
+  order: 1
+  number: MyString
+  text: MyString
+  otherRequirement_id: 1

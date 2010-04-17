@@ -1,0 +1,48 @@
+<p>
+  <b>First:</b>
+  <%= @scouter.first %>
+</p>
+
+<p>
+  <b>Last:</b>
+  <%= @scouter.last %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%= @scouter.birthday %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @scouter.phone %>
+</p>
+
+<p>
+  <b>Cell:</b>
+  <%= @scouter.cell %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @scouter.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @scouter.password %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @scouter.address_id %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%= @scouter.group_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_scouter_path(@scouter) %> |
+<%= link_to 'Back', scouters_path %>

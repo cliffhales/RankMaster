@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%= @award.name %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @award.order %>
+</p>
+
+<p>
+  <b>Award type:</b>
+  <%= @award.award_type.name %>
+</p>
+
+<p>
+  <b>Requirements:</b>
+  <%= @award.requirements.inspect %>
+</p>
+
+
+<%= link_to 'Edit', edit_award_path(@award) %> |
+<%= link_to 'Back', awards_path %>

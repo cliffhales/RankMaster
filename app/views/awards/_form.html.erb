@@ -1,0 +1,26 @@
+<% form_for(@award) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :order %><br />
+    <%= f.text_field :order %>
+  </div>
+
+  <div class="field">
+    <%= f.label :award_type_id %><br />
+    <%= f.text_field :award_type_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :award_type %><br />
+    <%= f.collection_select :award_type_id , AwardType.all, :id, :name%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<h1>Listing award_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @award_types.each do |award_type| %>
+  <tr>
+    <td><%= award_type.id %></td>
+    <td><%= award_type.name %></td>
+    <td><%= award_type.awards.inspect %></td>
+    <td><%= link_to 'Show', award_type %></td>
+    <td><%= link_to 'Edit', edit_award_type_path(award_type) %></td>
+    <td><%= link_to 'Destroy', award_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New award_type', new_award_type_path %>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%=  controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div class = "menu">
+<ul>
+	<li><a href = 'http://realtorwindow.com/scouters'>Scouts</a></li>
+	<li><a href = 'http://realtorwindow.com/addresses'>Addresses</a></li>
+	<li><a href = 'http://realtorwindow.com/groups'>Groups</a></li>
+	<li><a href = 'http://realtorwindow.com/award_types'>Award Types</a></li>
+	<li><a href = 'http://realtorwindow.com/awards'>Awards</a></li>
+	<li><a href = 'http://realtorwindow.com/requirements'>Requirements</a></li>
+</ul>	
+</div>
+<p class="notice"><%= notice %></p>
+
+<%= yield %>
+
+</body>
+</html>

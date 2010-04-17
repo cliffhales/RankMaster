@@ -1,0 +1,27 @@
+<% form_for(@requirement) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :award_id %><br />
+    <%= f.text_field :award_id %>
+  </div>
+  <div class="field">
+    <%= f.label :order %><br />
+    <%= f.text_field :order %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br />
+    <%= f.text_field :text %>
+  </div>
+  <div class="field">
+    <%= f.label :otherRequirement_id %><br />
+    <%= f.text_field :otherRequirement_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

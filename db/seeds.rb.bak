@@ -1,0 +1,539 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
+#   Mayor.create(:name => 'Daley', :city => cities.first)
+
+#Groups
+eleven = Group.create(:name => '11 Year Olds', :age => 11)
+troop = Group.create(:name => 'Troop', :age => 12)
+team = Group.create(:name => 'Team', :age => 14)
+crew = Group.create(:name => 'Crew', :age => 16)
+adult = Group.create(:name => 'Adult Leader', :age => 18)
+
+#Addresses
+#For sample purposes only
+cliff = Address.create(:street => '1911 Doniphan Ave', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+john = Address.create(:street => '3309 Sacramento', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+dad = Address.create(:street => '4910 Woodfield Dr', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+one = Address.create(:street => '400 E 220 W', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+two = Address.create(:street => '1234 Rennick', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+three = Address.create(:street => 'In a van down by the river', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+four = Address.create(:street => '19 Quaker Ridge Rd.', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+five = Address.create(:street => '1000 Coney Island Ave.', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+six = Address.create(:street => '2962 Dunedin Cv', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+seven = Address.create(:street => '1500 Vance Ave', :city => 'St. Joseph' :state => 'MO' :zip => '64503')
+
+
+#Scouters
+#For sample purposes only
+#Adults:
+Scouter.create(:first => 'Cliff', :last => 'Hales' :birthday => '9/8/1978', :phone => '801-443-4814', :cell => '307-871-1032', 
+:email => 'cliff@thekeet.com', :password => 'blank', :address => cliff, :group => adult)
+Scouter.create(:first => 'John', :last => 'Hales' :birthday => '3/22/1980', :phone => '810-444-4444', :cell => '321-456-4566', 
+:email => 'a@b.com', :password => 'blank', :address => john, :group => adult)
+Scouter.create(:first => 'Jay', :last => 'Hales' :birthday => '1/27/1956', :phone => '810-444-4444', :cell => '321-456-4566', 
+:email => 'a@b.com', :password => 'blank', :address => dad, :group => adult)
+Scouter.create(:first => 'Frank', :last => 'Marcucci' :birthday => '7/10/1943', :phone => '712-748-5088', :cell => 
+'712-748-5088', :email => 'Frank.L.Marcucci@spambob.com', :password => 'lichaec7Zoh', :address => six, :group => adult)
+Scouter.create(:first => 'Robert', :last => 'Michaels' :birthday => '3/1/1963', :phone => '347-860-7797', :cell => 
+'347-860-7797', :email => 'Robert.D.Michaels@trashymail.com', :password => 'ha9Ua8ooK', :address => seven, :group => adult)
+
+#11 Year olds
+Scouter.create(:first => 'T.J.', :last => 'Cantwell' :birthday => '1/1/1999', :phone => '810-444-4444', :cell => '321-456-4566', 
+:email => 'a@b.com', :password => 'blank', :address => , :group => eleven)
+Scouter.create(:first => 'Guillermo', :last => 'Cochran' :birthday => '2/11/1960', :phone => '907-244-2083', :cell => 
+'907-244-2083', :email => 'Guillermo.W.Cochran@pookmail.com', :password => 'ohl0Eizoopei', :address => one, :group => eleven)
+Scouter.create(:first => 'Salvatore', :last => 'Duchene' :birthday => '5/12/1982', :phone => '512-353-9714', :cell => 
+'512-353-9714', :email => 'Salvatore.T.Duchene@pookmail.com', :password => 'fooRafe7ahph', :address => one, :group => eleven)
+Scouter.create(:first => 'Gary', :last => 'Burns' :birthday => '4/10/1967', :phone => '720-290-4950', :cell => '720-290-4950', 
+:email => 'Gary.B.Burns@spambob.com', :password => 'ohg0aePoa', :address => one, :group => eleven)
+#Troop
+Scouter.create(:first => 'Rafael', :last => 'Hollis' :birthday => '3/10/1965', :phone => '410-754-0600', :cell => 
+'410-754-0600', :email => 'Rafael.S.Hollis@pookmail.com', :password => 'oe4IiGiengie', :address => two, :group => troop)
+Scouter.create(:first => 'Jose', :last => 'Hartwick' :birthday => '4/23/1967', :phone => '425-877-5177', :cell => 
+'425-877-5177', :email => 'Jose.P.Hartwick@mailinator.com', :password => 'ok9Aefuu2', :address => two, :group => troop)
+Scouter.create(:first => 'David', :last => 'Gonzalez' :birthday => '1/24/1940', :phone => '205-275-6136', :cell => 
+'205-275-6136', :email => 'David.M.Gonzalez@dodgit.com', :password => 'lailei1Shosh', :address => two, :group => troop)
+Scouter.create(:first => 'Antonio', :last => 'Thompson' :birthday => '10/10/1975', :phone => '570-561-5006', :cell => 
+'570-561-5006', :email => 'Antonio.C.Thompson@pookmail.com', :password => 'Iexaech6', :address => two, :group => troop)
+Scouter.create(:first => 'Troy', :last => 'Jerez' :birthday => '8/7/1944', :phone => '212-264-0408', :cell => '212-264-0408', 
+:email => 'Troy.M.Jerez@mailinator.com', :password => 'eiW0oonao0C', :address => two, :group => troop)
+Scouter.create(:first => 'Jon', :last => 'Halstead' :birthday => '7/31/1966', :phone => '718-343-0867', :cell => '718-343-0867', 
+:email => 'Jon.R.Halstead@trashymail.com', :password => 'ooBeiphuiH5b', :address => two, :group => troop)
+Scouter.create(:first => 'Elias', :last => 'Smith' :birthday => '9/17/1979', :phone => '443-914-5817', :cell => '443-914-5817', 
+:email => 'Elias.R.Smith@mailinator.com', :password => 'wah7AiPah', :address => two, :group => troop)
+Scouter.create(:first => 'Nathan', :last => 'Peck' :birthday => '1/25/1942', :phone => '760-676-5343', :cell => '760-676-5343', 
+:email => 'Nathan.T.Peck@spambob.com', :password => 'phaiD1Elee', :address => two, :group => troop)
+Scouter.create(:first => 'James', :last => 'Clark' :birthday => '11/26/1956', :phone => '336-325-3258', :cell => '336-325-3258', 
+:email => 'James.V.Clark@trashymail.com', :password => 'eeM2giaGuCie', :address => two, :group => troop)
+Scouter.create(:first => 'Juan', :last => 'Hendricks' :birthday => '10/4/1962', :phone => '918-656-1898', :cell => 
+'918-656-1898', :email => 'Juan.H.Hendricks@dodgit.com', :password => 'xe9mah0Vu2so', :address => two, :group => troop)
+Scouter.create(:first => 'Elliott', :last => 'Joseph' :birthday => '2/8/1982', :phone => '605-394-7683', :cell => 
+'605-394-7683', :email => 'Elliott.S.Joseph@spambob.com', :password => 'biel4vo9D', :address => two, :group => troop)
+Scouter.create(:first => 'Clyde', :last => 'Adams' :birthday => '6/30/1956', :phone => '717-600-1856', :cell => '717-600-1856', 
+:email => 'Clyde.S.Adams@trashymail.com', :password => 'lii8INi6ah', :address => two, :group => troop)
+Scouter.create(:first => 'Mickey', :last => 'Westgate' :birthday => '4/23/1945', :phone => '804-647-6314', :cell => 
+'804-647-6314', :email => 'Mickey.K.Westgate@mailinator.com', :password => 'aSa9goh7x', :address => two, :group => troop)
+Scouter.create(:first => 'George', :last => 'Tran' :birthday => '1/21/1951', :phone => '253-651-9346', :cell => '253-651-9346', 
+:email => 'George.J.Tran@pookmail.com', :password => 'avu5Iu4thai', :address => two, :group => troop)
+Scouter.create(:first => 'Joel', :last => 'Mcculley' :birthday => '5/14/1981', :phone => '504-684-5867', :cell => 
+'504-684-5867', :email => 'Joel.C.Mcculley@dodgit.com', :password => 'cish3Phiu', :address => two, :group => troop)
+Scouter.create(:first => 'Nathanael', :last => 'Campos' :birthday => '8/10/1962', :phone => '864-982-6830', :cell => 
+'864-982-6830', :email => 'Nathanael.A.Campos@mailinator.com', :password => 'eiCie9Ahri', :address => two, :group => troop)
+
+#Team
+Scouter.create(:first => 'William', :last => 'Buchanan' :birthday => '12/14/1947', :phone => '605-867-4758', :cell => 
+'605-867-4758', :email => 'William.P.Buchanan@trashymail.com', :password => 'ipiePohga5e', :address => three, :group => team)
+Scouter.create(:first => 'Timothy', :last => 'Machado' :birthday => '1/26/1948', :phone => '928-329-1186', :cell => 
+'928-329-1186', :email => 'Timothy.M.Machado@trashymail.com', :password => 'eeBa5ke7oh', :address => three, :group => team)
+Scouter.create(:first => 'Ernest', :last => 'Hughey' :birthday => '10/9/1978', :phone => '360-921-4786', :cell => 
+'360-921-4786', :email => 'Ernest.M.Hughey@trashymail.com', :password => 'eiR1iep7ahw', :address => three, :group => team)
+Scouter.create(:first => 'Patrick', :last => 'Sullivan' :birthday => '7/20/1958', :phone => '931-409-9511', :cell => 
+'931-409-9511', :email => 'Patrick.G.Sullivan@spambob.com', :password => 'Ahwu0aeL7', :address => three, :group => team)
+Scouter.create(:first => 'Jeffery', :last => 'Donley' :birthday => '6/10/1985', :phone => '541-759-8963', :cell => 
+'541-759-8963', :email => 'Jeffery.L.Donley@spambob.com', :password => 'Da7bie9s', :address => three, :group => team)
+Scouter.create(:first => 'Joseph', :last => 'Pendley' :birthday => '6/7/1947', :phone => '731-808-2371', :cell => 
+'731-808-2371', :email => 'Joseph.S.Pendley@trashymail.com', :password => 'Quailail4e', :address => three, :group => team)
+Scouter.create(:first => 'Brian', :last => 'Currier' :birthday => '12/4/1957', :phone => '310-829-3906', :cell => 
+'310-829-3906', :email => 'Brian.J.Currier@mailinator.com', :password => 'hi8ahF1gah', :address => three, :group => team)
+Scouter.create(:first => 'Philip', :last => 'Barth' :birthday => '9/15/1978', :phone => '630-689-7613', :cell => '630-689-7613', 
+:email => 'Philip.S.Barth@spambob.com', :password => 'oos2Dayah', :address => three, :group => team)
+Scouter.create(:first => 'Charles', :last => 'Pichardo' :birthday => '8/25/1977', :phone => '910-738-7024', :cell => 
+'910-738-7024', :email => 'Charles.A.Pichardo@dodgit.com', :password => 'ga8Ahxocei', :address => three, :group => team)
+Scouter.create(:first => 'James', :last => 'Lecompte' :birthday => '12/12/1969', :phone => '607-627-3722', :cell => 
+'607-627-3722', :email => 'James.M.Lecompte@dodgit.com', :password => 'Vu6eiw5Eish', :address => three, :group => team)
+Scouter.create(:first => 'Edward', :last => 'Valadez' :birthday => '2/27/1966', :phone => '347-225-8064', :cell => 
+'347-225-8064', :email => 'Edward.W.Valadez@dodgit.com', :password => 'Chaith8ai', :address => three, :group => team)
+Scouter.create(:first => 'Robert', :last => 'Estrada' :birthday => '6/11/1963', :phone => '413-732-8742', :cell => 
+'413-732-8742', :email => 'Robert.L.Estrada@trashymail.com', :password => 'Naadais0', :address => three, :group => team)
+Scouter.create(:first => 'Kennith', :last => 'Sherron' :birthday => '5/24/1952', :phone => '740-525-0861', :cell => 
+'740-525-0861', :email => 'Kennith.J.Sherron@pookmail.com', :password => 'quoh5aecaiN', :address => three, :group => team)
+Scouter.create(:first => 'Jim', :last => 'Wilson' :birthday => '1/10/1943', :phone => '805-783-0126', :cell => '805-783-0126', 
+:email => 'Jim.F.Wilson@trashymail.com', :password => 'onooTun1oo', :address => three, :group => team)
+
+#Crew
+Scouter.create(:first => 'Arthur', :last => 'Hill' :birthday => '1/8/1971', :phone => '401-765-2566', :cell => '401-765-2566', 
+:email => 'Arthur.J.Hill@pookmail.com', :password => 'ahSooGhae2ai', :address => four, :group => crew)
+Scouter.create(:first => 'John', :last => 'Rios' :birthday => '2/27/1965', :phone => '914-955-5199', :cell => '914-955-5199', 
+:email => 'John.W.Rios@spambob.com', :password => 'ai3IuCh3', :address => four, :group => crew)
+Scouter.create(:first => 'Christopher', :last => 'Murphy' :birthday => '8/21/1944', :phone => '541-967-0785', :cell => 
+'541-967-0785', :email => 'Christopher.J.Murphy@mailinator.com', :password => 'vees0Phaegah', :address => four, :group => crew)
+Scouter.create(:first => 'David', :last => 'Gamble' :birthday => '5/17/1964', :phone => '305-226-0181', :cell => '305-226-0181', 
+:email => 'David.M.Gamble@trashymail.com', :password => 'Moy2ohhughe', :address => four, :group => crew)
+Scouter.create(:first => 'Christopher', :last => 'Brown' :birthday => '6/9/1945', :phone => '618-210-5429', :cell => 
+'618-210-5429', :email => 'Christopher.K.Brown@spambob.com', :password => 'eeChu8VoCoh', :address => four, :group => crew)
+Scouter.create(:first => 'Michael', :last => 'Mcghee' :birthday => '6/5/1972', :phone => '561-904-8592', :cell => 
+'561-904-8592', :email => 'Michael.M.Mcghee@pookmail.com', :password => 'Eeva3eeth', :address => four, :group => crew)
+Scouter.create(:first => 'John', :last => 'Green' :birthday => '9/9/1952', :phone => '920-664-3806', :cell => '920-664-3806', 
+:email => 'John.A.Green@dodgit.com', :password => 'maKiN9IeWe', :address => four, :group => crew)
+Scouter.create(:first => 'Adam', :last => 'Manning' :birthday => '4/29/1967', :phone => '518-325-9369', :cell => '518-325-9369', 
+:email => 'Adam.C.Manning@mailinator.com', :password => 'AetheiGh1qu', :address => four, :group => crew)
+Scouter.create(:first => 'William', :last => 'Knutson' :birthday => '10/29/1945', :phone => '763-531-6912', :cell => 
+'763-531-6912', :email => 'William.J.Knutson@pookmail.com', :password => 'Ohcoo1Oo', :address => four, :group => crew)
+
+
+
+#AwardTypes
+rank = AwardType.create(:name => 'Rank')
+required = AwardType.create(:name => 'Required Merit Bage')
+elective = AwardType.create(:name => 'Elective Merit Badge')
+adult = AwardType.create(:name => 'Adult Award')
+religious = AwardType.create(:name => 'Religious')
+other = AwardType.create(:name => 'Other')
+
+#Awards
+#Ranks
+Scout = Awards.create(:name => 'Scout', :order => , awardType => rank)
+Tenderfoot = Awards.create(:name => 'Tenderfoot', :order => , awardType => rank)
+SecondClass = Awards.create(:name => 'Second Class', :order => , awardType => rank)
+FirstClass = Awards.create(:name => 'First Class', :order => , awardType => rank)
+Star = Awards.create(:name => 'Star', :order => , awardType => rank)
+Life = Awards.create(:name => 'Life', :order => , awardType => rank)
+Eagle = Awards.create(:name => 'Eagle', :order => , awardType => rank)
+
+
+#Required Merit Badges
+Camping = Awards.create(:name => 'Camping', :order => , awardType => required)
+CitizenshipintheCommunity = Awards.create(:name => 'Citizenship in the Community', :order => , awardType => required)
+CitizenshipintheNation = Awards.create(:name => 'Citizenship in the Nation', :order => , awardType => required)
+CitizenshipintheWorld = Awards.create(:name => 'Citizenship in the World', :order => , awardType => required)
+Communications = Awards.create(:name => 'Communications', :order => , awardType => required)
+Cycling = Awards.create(:name => 'Cycling', :order => , awardType => required)
+EmergencyPreparedness = Awards.create(:name => 'Emergency Preparedness', :order => , awardType => required)
+EnvironmentalScience = Awards.create(:name => 'Environmental Science', :order => , awardType => required)
+FamilyLife = Awards.create(:name => 'Family Life', :order => , awardType => required)
+FirstAid = Awards.create(:name => 'First Aid', :order => , awardType => required)
+Hiking = Awards.create(:name => 'Hiking', :order => , awardType => required)
+Lifesaving = Awards.create(:name => 'Lifesaving', :order => , awardType => required)
+PersonalFitness = Awards.create(:name => 'Personal Fitness', :order => , awardType => required)
+PersonalManagement = Awards.create(:name => 'Personal Management', :order => , awardType => required)
+Swimming = Awards.create(:name => 'Swimming', :order => , awardType => required)
+
+#Elective Merit Badges
+AmericanBusiness = Awards.create(:name => 'American Business', :order => , awardType => elective)
+AmericanCultures = Awards.create(:name => 'American Cultures', :order => , awardType => elective)
+AmericanHeritage = Awards.create(:name => 'American Heritage', :order => , awardType => elective)
+AmericanLabor = Awards.create(:name => 'American Labor', :order => , awardType => elective)
+AnimalScience = Awards.create(:name => 'Animal Science', :order => , awardType => elective)
+Archaeology = Awards.create(:name => 'Archaeology', :order => , awardType => elective)
+Archery = Awards.create(:name => 'Archery', :order => , awardType => elective)
+Architecture = Awards.create(:name => 'Architecture', :order => , awardType => elective)
+Art = Awards.create(:name => 'Art', :order => , awardType => elective)
+Astronomy = Awards.create(:name => 'Astronomy', :order => , awardType => elective)
+Athletics = Awards.create(:name => 'Athletics', :order => , awardType => elective)
+NuclearScience = Awards.create(:name => 'Nuclear Science', :order => , awardType => elective)
+AutomotiveMaintenance = Awards.create(:name => 'Automotive Maintenance', :order => , awardType => elective)
+Aviation = Awards.create(:name => 'Aviation', :order => , awardType => elective)
+Backpacking = Awards.create(:name => 'Backpacking', :order => , awardType => elective)
+Basketry = Awards.create(:name => 'Basketry', :order => , awardType => elective)
+BirdStudy = Awards.create(:name => 'Bird Study', :order => , awardType => elective)
+Bugling = Awards.create(:name => 'Bugling', :order => , awardType => elective)
+Canoeing = Awards.create(:name => 'Canoeing', :order => , awardType => elective)
+Chemistry = Awards.create(:name => 'Chemistry', :order => , awardType => elective)
+Cinematography = Awards.create(:name => 'Cinematography', :order => , awardType => elective)
+Climbing = Awards.create(:name => 'Climbing', :order => , awardType => elective)
+CoinCollecting = Awards.create(:name => 'Coin Collecting', :order => , awardType => elective)
+Collections = Awards.create(:name => 'Collections', :order => , awardType => elective)
+CompositeMaterials = Awards.create(:name => 'Composite Materials', :order => , awardType => elective)
+Computers = Awards.create(:name => 'Computers', :order => , awardType => elective)
+Cooking = Awards.create(:name => 'Cooking', :order => , awardType => elective)
+CrimePrevention = Awards.create(:name => 'Crime Prevention', :order => , awardType => elective)
+Dentistry = Awards.create(:name => 'Dentistry', :order => , awardType => elective)
+DisabilitiesAwareness = Awards.create(:name => 'Disabilities Awareness', :order => , awardType => elective)
+DogCare = Awards.create(:name => 'Dog Care', :order => , awardType => elective)
+Drafting = Awards.create(:name => 'Drafting', :order => , awardType => elective)
+Electricity = Awards.create(:name => 'Electricity', :order => , awardType => elective)
+Electronics = Awards.create(:name => 'Electronics', :order => , awardType => elective)
+Energy = Awards.create(:name => 'Energy', :order => , awardType => elective)
+Engineering = Awards.create(:name => 'Engineering', :order => , awardType => elective)
+Entrepreneurship = Awards.create(:name => 'Entrepreneurship', :order => , awardType => elective)
+FarmMechanics = Awards.create(:name => 'Farm Mechanics', :order => , awardType => elective)
+Fingerprinting = Awards.create(:name => 'Fingerprinting', :order => , awardType => elective)
+FireSafety = Awards.create(:name => 'Fire Safety', :order => , awardType => elective)
+FishAnd Wildlife Management = Awards.create(:name => 'Fish And Wildlife Management', :order => , awardType => elective)
+Fishing = Awards.create(:name => 'Fishing', :order => , awardType => elective)
+FlyFishing = Awards.create(:name => 'Fly Fishing', :order => , awardType => elective)
+Forestry = Awards.create(:name => 'Forestry', :order => , awardType => elective)
+Gardening = Awards.create(:name => 'Gardening', :order => , awardType => elective)
+Genealogy = Awards.create(:name => 'Genealogy', :order => , awardType => elective)
+Geology = Awards.create(:name => 'Geology', :order => , awardType => elective)
+Golf = Awards.create(:name => 'Golf', :order => , awardType => elective)
+GraphicArts = Awards.create(:name => 'Graphic Arts', :order => , awardType => elective)
+HomeRepairs = Awards.create(:name => 'Home Repairs', :order => , awardType => elective)
+Horsemanship = Awards.create(:name => 'Horsemanship', :order => , awardType => elective)
+IndianLore = Awards.create(:name => 'Indian Lore', :order => , awardType => elective)
+InsectStudy = Awards.create(:name => 'Insect Study', :order => , awardType => elective)
+Journalism = Awards.create(:name => 'Journalism', :order => , awardType => elective)
+LandscapeArchitecture = Awards.create(:name => 'Landscape Architecture', :order => , awardType => elective)
+Law = Awards.create(:name => 'Law', :order => , awardType => elective)
+Leatherwork = Awards.create(:name => 'Leatherwork', :order => , awardType => elective)
+MammalStudy = Awards.create(:name => 'Mammal Study', :order => , awardType => elective)
+Medicine = Awards.create(:name => 'Medicine', :order => , awardType => elective)
+Metalwork = Awards.create(:name => 'Metalwork', :order => , awardType => elective)
+ModelDesign And Building = Awards.create(:name => 'Model Design And Building', :order => , awardType => elective)
+Motorboating = Awards.create(:name => 'Motorboating', :order => , awardType => elective)
+Music = Awards.create(:name => 'Music', :order => , awardType => elective)
+Nature = Awards.create(:name => 'Nature', :order => , awardType => elective)
+NuclearScience = Awards.create(:name => 'Nuclear Science', :order => , awardType => elective)
+Oceanography = Awards.create(:name => 'Oceanography', :order => , awardType => elective)
+Orienteering = Awards.create(:name => 'Orienteering', :order => , awardType => elective)
+Painting = Awards.create(:name => 'Painting', :order => , awardType => elective)
+Pets = Awards.create(:name => 'Pets', :order => , awardType => elective)
+Photography = Awards.create(:name => 'Photography', :order => , awardType => elective)
+Pioneering = Awards.create(:name => 'Pioneering', :order => , awardType => elective)
+PlantScience = Awards.create(:name => 'Plant Science', :order => , awardType => elective)
+Plumbing = Awards.create(:name => 'Plumbing', :order => , awardType => elective)
+Pottery = Awards.create(:name => 'Pottery', :order => , awardType => elective)
+PublicHealth = Awards.create(:name => 'Public Health', :order => , awardType => elective)
+PublicSpeaking = Awards.create(:name => 'Public Speaking', :order => , awardType => elective)
+PulpAnd Paper = Awards.create(:name => 'Pulp And Paper', :order => , awardType => elective)
+Radio = Awards.create(:name => 'Radio', :order => , awardType => elective)
+Railroading = Awards.create(:name => 'Railroading', :order => , awardType => elective)
+Reading = Awards.create(:name => 'Reading', :order => , awardType => elective)
+ReptileAnd Amphibian Study = Awards.create(:name => 'Reptile And Amphibian Study', :order => , awardType => elective)
+RifleShooting = Awards.create(:name => 'Rifle Shooting', :order => , awardType => elective)
+Rowing = Awards.create(:name => 'Rowing', :order => , awardType => elective)
+Safety = Awards.create(:name => 'Safety', :order => , awardType => elective)
+Salesmanship = Awards.create(:name => 'Salesmanship', :order => , awardType => elective)
+Scholarship = Awards.create(:name => 'Scholarship', :order => , awardType => elective)
+ScubaDiving = Awards.create(:name => 'Scuba Diving', :order => , awardType => elective)
+Sculpture = Awards.create(:name => 'Sculpture', :order => , awardType => elective)
+ShotgunShooting = Awards.create(:name => 'Shotgun Shooting', :order => , awardType => elective)
+Skating = Awards.create(:name => 'Skating', :order => , awardType => elective)
+Small-BoatSailing = Awards.create(:name => 'Small-Boat Sailing', :order => , awardType => elective)
+SnowSports = Awards.create(:name => 'Snow Sports', :order => , awardType => elective)
+SoilAnd Water Conservation = Awards.create(:name => 'Soil And Water Conservation', :order => , awardType => elective)
+SpaceExploration = Awards.create(:name => 'Space Exploration', :order => , awardType => elective)
+Sports = Awards.create(:name => 'Sports', :order => , awardType => elective)
+StampCollecting = Awards.create(:name => 'Stamp Collecting', :order => , awardType => elective)
+Surveying = Awards.create(:name => 'Surveying', :order => , awardType => elective)
+Textile = Awards.create(:name => 'Textile', :order => , awardType => elective)
+Theater = Awards.create(:name => 'Theater', :order => , awardType => elective)
+TrafficSafety = Awards.create(:name => 'Traffic Safety', :order => , awardType => elective)
+TruckTransportation = Awards.create(:name => 'Truck Transportation', :order => , awardType => elective)
+VeterinaryMedicine = Awards.create(:name => 'Veterinary Medicine', :order => , awardType => elective)
+WaterSports = Awards.create(:name => 'Water Sports', :order => , awardType => elective)
+Weather = Awards.create(:name => 'Weather', :order => , awardType => elective)
+Whitewater = Awards.create(:name => 'Whitewater', :order => , awardType => elective)
+WildernessSurvival = Awards.create(:name => 'Wilderness Survival', :order => , awardType => elective)
+WoodCarving = Awards.create(:name => 'Wood Carving', :order => , awardType => elective)
+Woodwork = Awards.create(:name => 'Woodwork', :order => , awardType => elective)
+
+
+#Adult Award
+Goodjob Leader = Awards.create(:name => 'Good job Leader', :order => , awardType => adult)
+SilverBeaver = Awards.create(:name => 'Silver Beaver', :order => , awardType => adult)
+
+
+#Religious
+Dutyto God (Deacons) = Awards.create(:name => 'Duty to God (Deacons)', :order => , awardType => religious)
+Dutyto God (Teachers) = Awards.create(:name => 'Duty to God (Teachers)', :order => , awardType => religious)
+Dutyto God (Priests) = Awards.create(:name => 'Duty to God (Priests)', :order => , awardType => religious)
+
+#Other
+Palm1 = Awards.create(:name => 'Palm 1', :order => , awardType => other)
+Palm2 = Awards.create(:name => 'Palm 2', :order => , awardType => other)
+Palm3 Awards.create(:name => 'Palm 3', :order => , awardType => other)
+
+#Requirements (leaving otherrequirementID blank)
+#Scout
+Requirements.create(:award => Scout, :order =>1, :number => '1', :text => 'Meet age requirements: Be a boy who is 11 years old, 
+or one who has completed the fifth grade or earned the Arrow of Light Award and is at least 10 years old, but is not yet 18 
+years old.')
+Requirements.create(:award => Scout, :order =>1, :number => '2', :text => 'Complete a Boy Scout application and health history 
+signed by your parent or guardian.')
+Requirements.create(:award => Scout, :order =>1, :number => '3', :text => 'Find a Scout troop near your home. (To find a troop, 
+contact your local Boy Scout Council.  The Council name, address and phone number can be found on BSA\'s Council Locator 
+Page.)')
+Requirements.create(:award => Scout, :order =>1, :number => '4', :text => 'Repeat the Pledge of Allegiance.')
+Requirements.create(:award => Scout, :order =>1, :number => '5', :text => 'Demonstrate the Scout sign, salute, and handshake.')
+Requirements.create(:award => Scout, :order =>1, :number => '6', :text => 'Demonstrate tying the square knot (a joining knot).')
+Requirements.create(:award => Scout, :order =>1, :number => '7', :text => 'Understand and agree to live by the Scout Oath or 
+Promise, Law, motto, and slogan, and the Outdoor Code.')
+Requirements.create(:award => Scout, :order =>1, :number => '8', :text => 'Describe the Scout badge.')
+Requirements.create(:award => Scout, :order =>1, :number => '9', :text => 'Complete the Pamphlet Exercises. With your parent or 
+guardian, complete the exercises in the pamphlet "How to Protect Your Children from Child Abuse: A Parent\'s Guide".')
+Requirements.create(:award => Scout, :order =>1, :number => '10', :text => 'Participate in a Scoutmaster conference. Turn in 
+your Boy Scout application and health history form signed by your parent or guardian, then participate in a Scoutmaster 
+conference.')
+
+#Tenderfoot
+Requirements.create(:award => Tenderfoot, :order =>1, :number => '1', :text => 'Present yourself to your leader, properly 
+dressed, before going on an overnight camping trip. Show the camping gear you will use. Show the right way to pack and carry 
+it.')
+Requirements.create(:award => Tenderfoot, :order =>2, :number => '2', :text => 'Spend at least one night on a patrol or troop 
+campout. Sleep in a tent you have helped pitch.')
+Requirements.create(:award => Tenderfoot, :order =>3, :number => '3', :text => 'On the campout, assist in preparing and cooking 
+one of your patrol\'s meals.  Tell why it is important for each patrol member to share in meal preparation and cleanup, and 
+explain the importance of eating together.')
+Requirements.create(:award => Tenderfoot, :order =>4, :number => '4a', :text => 'Demonstrate how to whip and fuse the ends of a 
+rope.')
+Requirements.create(:award => Tenderfoot, :order =>5, :number => '4b', :text => 'Demonstrate that you know how to tie the 
+following knots and tell what their uses are: two half hitches and the taut-line hitch.')
+Requirements.create(:award => Tenderfoot, :order =>6, :number => '4c', :text => 'Using the EDGE method teach another person how 
+to tie the square knot.')
+Requirements.create(:award => Tenderfoot, :order =>7, :number => '5', :text => 'Explain the rules of safe hiking, both on the 
+highway and cross-country, during the day and at night. Explain what to do if you are lost.')
+Requirements.create(:award => Tenderfoot, :order =>8, :number => '6', :text => 'Demonstrate how to display, raise, lower, and 
+fold the American flag.')
+Requirements.create(:award => Tenderfoot, :order =>9, :number => '7', :text => 'Repeat from memory and explain in your own words 
+the Scout Oath, Law, motto, and slogan.')
+Requirements.create(:award => Tenderfoot, :order =>10, :number => '8', :text => 'Know your patrol name, give the patrol yell, 
+and describe your patrol flag.')
+Requirements.create(:award => Tenderfoot, :order =>11, :number => '9', :text => 'Explain the importance of the buddy system as 
+it relates to your personal safety on outings and in your neighborhood. Describe what a bully is and how you should respond to 
+one.')
+Requirements.create(:award => Tenderfoot, :order =>12, :number => '10a', :text => 'Record your best in the following tests: *  
+Push-ups * Pull-ups * Sit-ups * Standing long jump * 1/4 mile walk/run')
+Requirements.create(:award => Tenderfoot, :order =>13, :number => '10b', :text => 'Show improvement in the activities listed in 
+requirement 10a after practicing for 30 days.')
+Requirements.create(:award => Tenderfoot, :order =>14, :number => '11', :text => 'Identify local poisonous plants; tell how to 
+treat for exposure to them.')
+Requirements.create(:award => Tenderfoot, :order =>15, :number => '12a', :text => 'Demonstrate how to care for someone who is 
+choking.')
+Requirements.create(:award => Tenderfoot, :order =>16, :number => '12b', :text => 'Show first aid for the following: * Simple 
+cuts and scrapes * Blisters on the hand and foot * Minor (thermal/heat) burns or scalds (superficial, or first degree) * Bites 
+and stings of insects and ticks * Venomous snakebite * Nosebleed * Frostbite and sunburn')
+Requirements.create(:award => Tenderfoot, :order =>17, :number => '13', :text => 'Demonstrate scout spirit by living the Scout 
+Oath (Promise) and Scout Law in your everyday life. Discuss four specific examples of how you have lived the points of the Scout 
+Law in your daily life.')
+Requirements.create(:award => Tenderfoot, :order =>18, :number => '14', :text => 'Participate in a Scoutmaster conference.')
+Requirements.create(:award => Tenderfoot, :order =>19, :number => '15', :text => 'Complete your board of review')
+
+#SecondClass
+Requirements.create(:award => SecondClass, :order =>1, :number => '1a', :text => 'Demonstrate how a compass works and how to 
+orient a map. Explain what map symbols mean.')
+Requirements.create(:award => SecondClass, :order =>2, :number => '1b', :text => 'Using a compass and a map together, take a 
+5-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian.*')
+Requirements.create(:award => SecondClass, :order =>3, :number => '2', :text => 'Discuss the principles of "Leave No Trace"')
+Requirements.create(:award => SecondClass, :order =>4, :number => '3a', :text => 'Since joining, have participated in five 
+separate troop/patrol activities (other than troop/patrol meetings), two of which included camping overnight.')
+Requirements.create(:award => SecondClass, :order =>5, :number => '3b', :text => 'On one of these campouts, select your patrol 
+site and sleep in a tent that you pitched. Explain what factors you should consider when choosing a patrol site and where to 
+pitch a tent.')
+Requirements.create(:award => SecondClass, :order =>6, :number => '3c', :text => 'Demonstrate proper care, sharpening, and use 
+of the knife, saw, and ax, and describe when they should be used.')
+Requirements.create(:award => SecondClass, :order =>7, :number => '3d', :text => 'Use the tools listed in requirement 3c to 
+prepare tinder, kindling, and fuel for a cooking fire.')
+Requirements.create(:award => SecondClass, :order =>8, :number => '3e', :text => 'Discuss when it is appropriate to use a 
+cooking fire and a lightweight stove. Discuss the safety procedures for using both..')
+Requirements.create(:award => SecondClass, :order =>9, :number => '3f', :text => 'In an approved place and at an approved time, 
+demonstrate how to build a fire and set up a lightweight stove. Note: Lighting the fire is not required.')
+Requirements.create(:award => SecondClass, :order =>10, :number => '3g', :text => 'On one campout, plan and cook one hot 
+breakfast or lunch, selecting foods from the food pyramid. Explain the importance of good nutrition. Tell how to transport, 
+store, and prepare the foods you selected.')
+Requirements.create(:award => SecondClass, :order =>11, :number => '4', :text => 'Participate in a flag ceremony for your 
+school, religious institution, chartered organization, community, or troop activity. Explain to your leader what respect is due 
+the flag of the United States.')
+Requirements.create(:award => SecondClass, :order =>12, :number => '5', :text => 'Participate in an approved (minimum of one 
+hour) service project.')
+Requirements.create(:award => SecondClass, :order =>13, :number => '6', :text => 'Identify or show evidence of at least ten 
+kinds of wild animals (birds, mammals, reptiles, fish, mollusks) found in your community.')
+Requirements.create(:award => SecondClass, :order =>14, :number => '7a', :text => 'Show what to do for "hurry" cases of stopped 
+breathing, serious bleeding, and ingested poisoning.')
+Requirements.create(:award => SecondClass, :order =>15, :number => '7b', :text => 'Prepare a personal first aid kit to take with 
+you on a hike.')
+Requirements.create(:award => SecondClass, :order =>16, :number => '7c', :text => 'Demonstrate first aid for the following: * 
+Object in the eye * Bite of a suspected rabid animal * Puncture wounds from a splinter, nail, and fishhook * Serious burns 
+(partial thickness, or second degree)* Heat exhaustion * Shock * Heatstroke, dehydration, hypothermia, and hyperventilation')
+Requirements.create(:award => SecondClass, :order =>17, :number => '8a', :text => 'Tell what precautions must be taken for a 
+safe swim.')
+Requirements.create(:award => SecondClass, :order =>18, :number => '8b', :text => 'Demonstrate your ability to jump feet first 
+into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return 
+to your starting place.')
+Requirements.create(:award => SecondClass, :order =>19, :number => '8c', :text => 'Demonstrate water rescue methods by reaching 
+with your arm or leg, by reaching with a suitable object, and by throwing lines and objects. Explain why swimming rescues should 
+not be attempted when a reaching or throwing rescue is possible, and explain why and how a rescue swimmer should avoid contact 
+with the victim.')
+Requirements.create(:award => SecondClass, :order =>20, :number => '9a', :text => 'Participate in a school, community, or troop 
+program on the dangers of using drugs, alcohol, and tobacco, and other practices that could be harmful to your health. Discuss 
+your participation in the program with your family, and explain the dangers of substance addictions.')
+Requirements.create(:award => SecondClass, :order =>21, :number => '9b', :text => 'Explain the three R\'s of personal safety and 
+protection.')
+Requirements.create(:award => SecondClass, :order =>22, :number => '10', :text => 'Earn an amount of money agreed upon by you 
+and your parent, then save at least 50 percent of that money.')
+Requirements.create(:award => SecondClass, :order =>23, :number => '11', :text => 'Demonstrate scout spirit by living the Scout 
+Oath (Promise) and Scout Law in your everyday life. Discuss four specific examples (different from those used for Tenderfoot 
+requirement 13) of how you have lived the points of the Scout Law in your daily life.')
+Requirements.create(:award => SecondClass, :order =>24, :number => '12', :text => 'Participate in a Scoutmaster conference.')
+Requirements.create(:award => SecondClass, :order =>25, :number => '13', :text => 'Complete your board of review.')
+
+#FirstClass
+Requirements.create(:award => FirstClass, :order =>1, :number => '1', :text => 'Demonstrate how to find directions during the 
+day and at night without using a compass.')
+Requirements.create(:award => FirstClass, :order =>2, :number => '2', :text => 'Using a map and compass, complete an 
+orienteering course that covers at least one mile and requires measuring the height and/or width of designated items (tree, 
+tower, canyon, ditch, etc.)')
+Requirements.create(:award => FirstClass, :order =>3, :number => '3', :text => 'Since joining, have participated in ten separate 
+troop/patrol activities (other than troop/patrol meetings), three of which included camping overnight. Demonstrate the 
+principles of Leave No Trace on these outings.')
+Requirements.create(:award => FirstClass, :order =>4, :number => '4a', :text => 'Help plan a patrol menu for one campout that 
+includes at least one breakfast, one lunch, and one dinner and that requires cooking at least two of the meals. Tell how the 
+menu includes the foods from the food pyramid and meets nutritional needs.')
+Requirements.create(:award => FirstClass, :order =>5, :number => '4b', :text => 'Using the menu planned in requirement 4a, make 
+a list showing the cost and food amounts needed to feed three or more boys and secure the ingredients.')
+Requirements.create(:award => FirstClass, :order =>6, :number => '4c', :text => 'Tell which pans, utensils, and other gear will 
+be needed to cook and serve these meals.')
+Requirements.create(:award => FirstClass, :order =>7, :number => '4d', :text => 'Explain the procedures to follow in the safe 
+handling and storage of fresh meats, dairy products, eggs, vegetables, and other perishable food products. Tell how to properly 
+dispose of camp garbage, cans, plastic containers, and other rubbish.')
+Requirements.create(:award => FirstClass, :order =>8, :number => '4e', :text => 'On one campout, serve as your patrol''s cook. 
+Supervise your assistant(s) in using a stove or building a cooking fire. Prepare the breakfast, lunch, and dinner planned in 
+requirement 4a. Lead your patrol in saying grace at the meals and supervise cleanup.')
+Requirements.create(:award => FirstClass, :order =>9, :number => '5', :text => 'Visit and discuss with a selected individual 
+approved by your leader (elected official, judge, attorney, civil servant, principal, teacher) your constitutional rights and 
+obligations as a U.S. citizen.')
+Requirements.create(:award => FirstClass, :order =>10, :number => '6', :text => 'Identify or show evidence of at least ten kinds 
+of native plants found in your community.')
+Requirements.create(:award => FirstClass, :order =>11, :number => '7a', :text => 'Discuss when you should and should not use 
+lashings. Then demonstrate tying the timber hitch and clove hitch and their use in square, shear, and diagonal lashings by 
+joining two or more poles or staves together.')
+Requirements.create(:award => FirstClass, :order =>12, :number => '7b', :text => 'Use lashing to make a useful camp gadget.')
+Requirements.create(:award => FirstClass, :order =>13, :number => '8a', :text => 'Demonstrate tying the bowline knot and 
+describe several ways it can be used.')
+Requirements.create(:award => FirstClass, :order =>14, :number => '8b', :text => 'Demonstrate bandages for a sprained ankle. and 
+for injuries on the head, the upper arm, and the collarbone.')
+Requirements.create(:award => FirstClass, :order =>15, :number => '8c', :text => 'Show how to transport by yourself, and with 
+one other person, a person: * from a smoke-filled room * with a sprained ankle, for at least 25 yards.')
+Requirements.create(:award => FirstClass, :order =>16, :number => '8d', :text => 'Tell the five most common signals of a heart 
+attack. Explain the steps (procedures) in cardiopulmonary resuscitation (CPR).')
+Requirements.create(:award => FirstClass, :order =>17, :number => '9a', :text => 'Tell what precautions must be taken for a safe 
+trip afloat.')
+Requirements.create(:award => FirstClass, :order =>18, :number => '9b', :text => 'Successfully complete the BSA swimmer test.')
+Requirements.create(:award => FirstClass, :order =>19, :number => '9c', :text => 'With a helper and a practice victim, show a 
+line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.)')
+Requirements.create(:award => FirstClass, :order =>20, :number => '10', :text => 'Tell someone who is eligible to join Boy 
+Scouts, or an inactive Boy Scout, about your troop''s activities. Invite him to a troop outing, activity, service project or 
+meeting. Tell him how to join, or encourage the inactive Boy Scout to become active.')
+Requirements.create(:award => FirstClass, :order =>21, :number => '11', :text => 'Describe the three things you should avoid 
+doing related to use of the Internet. Describe a cyberbully and how you should respond to one.')
+Requirements.create(:award => FirstClass, :order =>22, :number => '12', :text => 'Demonstrate scout spirit by living the Scout 
+Oath (Promise) and Scout Law in your everyday life. Discuss four specific examples (different from those used for Tenderfoot 
+requirement 13 and Second Class requirement 11) of how you have lived the points of the Scout Law in your daily life.')
+Requirements.create(:award => FirstClass, :order =>23, :number => '13', :text => 'Participate in a Scoutmaster conference.')
+Requirements.create(:award => FirstClass, :order =>24, :number => '14', :text => 'Complete your board of review.')
+
+#Star
+Requirements.create(:award => Star, :order =>1, :number => '1', :text => 'Be active in your troop and patrol for at least 4 
+months as a First Class Scout.')
+Requirements.create(:award => Star, :order =>1, :number => '2', :text => 'Demonstrate scout spirit by living the Scout Oath 
+(Promise) and Scout Law in your everyday life.')
+Requirements.create(:award => Star, :order =>1, :number => '3', :text => 'Earn 6 merit badges, including 4 from the required 
+list for Eagle.*')
+Requirements.create(:award => Star, :order =>1, :number => '4', :text => 'While a First Class Scout, take part in service 
+projects totaling at least 6 hours of work. These projects must be approved by your Scoutmaster.')
+Requirements.create(:award => Star, :order =>1, :number => '5', :text => 'While a First Class Scout, serve actively 4 months in 
+one or more of the following positions of responsibility (or carry out a Scoutmaster-assigned leadership project to help the 
+troop):')
+Requirements.create(:award => Star, :order =>1, :number => '6', :text => 'Take part in a Scoutmaster conference')
+Requirements.create(:award => Star, :order =>1, :number => '7', :text => 'Complete your board of review.')
+
+#Life
+Requirements.create(:award => Life, :order =>1, :number => '1', :text => 'Be active in your troop and patrol for at least 6 
+months as a Star Scout.')
+Requirements.create(:award => Life, :order =>2, :number => '2', :text => 'Demonstrate Scout spirit by living the Scout Oath 
+(Promise) and Scout Law in your everyday life.')
+Requirements.create(:award => Life, :order =>3, :number => '3', :text => 'Earn 5 more merit badges (so that you have 11 in all), 
+including any 3 more from the required list for Eagle.')
+Requirements.create(:award => Life, :order =>4, :number => '4', :text => 'While a Star Scout, take part in service projects 
+totaling at least 6 hours of work. These projects must be approved by your Scoutmaster.')
+Requirements.create(:award => Life, :order =>5, :number => '5', :text => 'While a Star Scout, serve actively 6 months in one or 
+more of the positions of responsibility listed in requirement 5 for Star Scout (or carry out a Scoutmaster-assigned leadership 
+project to help the troop).')
+Requirements.create(:award => Life, :order =>6, :number => '6', :text => 'While a Star Scout, use the EDGE method to teach a 
+younger Scout the skills from ONE of the following six choices, so that he is prepared to pass those requirements to his unit 
+leader\'s satisfaction.')
+Requirements.create(:award => Life, :order =>7, :number => '6a', :text => 'Second Class - 7a and 7c (first aid)')
+Requirements.create(:award => Life, :order =>8, :number => '6b', :text => 'Second Class - 1a (outdoor skills)')
+Requirements.create(:award => Life, :order =>9, :number => '6c', :text => 'Second Class - 3c, 3d, 3e, and 3f (cooking/camping)')
+Requirements.create(:award => Life, :order =>10, :number => '6d', :text => 'First Class - 8a, 8b, 8c, and 8d (first aid)')
+Requirements.create(:award => Life, :order =>11, :number => '6e', :text => 'First Class - 1, 7a, and 7c (outdoor skills)')
+Requirements.create(:award => Life, :order =>12, :number => '6f', :text => 'First Class - 4a, 4b, and 4d (cooking/camping)')
+Requirements.create(:award => Life, :order =>13, :number => '7', :text => 'Take part in a Scoutmaster conference')
+Requirements.create(:award => Life, :order =>14, :number => '8', :text => 'Complete your board of review.')
+
+#Eagle
+Requirements.create(:award => Eagle, :order =>1, :number => '1', :text => 'Be active in your troop, team, crew, or ship for a 
+period of at least 6 months after you have achieved the rank of Life Scout.')
+Requirements.create(:award => Eagle, :order =>1, :number => '2', :text => 'Demonstrate that you live by the principles of the 
+Scout Oath and Law in your daily life. List the names of individuals who know you personally and would be willing to provide a 
+recommendation on your behalf, including parents/guardians, religious, educational, and employer references.')
+Requirements.create(:award => Eagle, :order =>1, :number => '3', :text => 'Earn a total of 21 merit badges (10 more than you 
+already have), including the following:')
+Requirements.create(:award => Eagle, :order =>1, :number => '4', :text => 'While a Life Scout, serve actively for a period of 6 
+months in one or more of the following positions of responsibility: ')
+Requirements.create(:award => Eagle, :order =>1, :number => '5', :text => 'While a Life Scout, plan, develop, and give 
+leadership to others in a service project helpful to any religious institution, any school, or your community. (The project 
+should benefit an organization other than Boy Scouting.) The project plan must be approved by the organization benefiting from 
+the effort, your Scoutmaster and troop committee and the council or district before you start. You must use the Eagle Scout 
+Leadership Service Project Workbook, No. 521-927, in meeting this requirement.')
+Requirements.create(:award => Eagle, :order =>1, :number => '6', :text => 'Take part in a Scoutmaster conference.')
+Requirements.create(:award => Eagle, :order =>1, :number => '7', :text => 'Successfully complete an Eagle Scout board of 
+review.')
+
+
+
+

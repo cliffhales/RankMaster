@@ -1,0 +1,31 @@
+<h1>Listing requirements</h1>
+
+<table>
+  <tr>
+    <th>Award</th>
+    <th>Order</th>
+    <th>Number</th>
+    <th>Text</th>
+    <th>Otherrequirement</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @requirements.each do |requirement| %>
+  <tr>
+    <td><%= requirement.award.name %></td>
+    <td><%= requirement.order %></td>
+    <td><%= requirement.number %></td>
+    <td><%= requirement.text %></td>
+    <td><%= requirement.otherRequirement_id %></td>
+    <td><%= link_to 'Show', requirement %></td>
+    <td><%= link_to 'Edit', edit_requirement_path(requirement) %></td>
+    <td><%= link_to 'Destroy', requirement, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New requirement', new_requirement_path %>
