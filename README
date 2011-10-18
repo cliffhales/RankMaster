@@ -4,7 +4,6 @@ This software will eventually allow for the management of Boy Scout Units.
 
 TODO:
 -Update to Rails 3.1
--Add in ActiveAdmin Support
 -Complete input of Advancement Requirements
 -Add support for multiple users/permission levels
 
